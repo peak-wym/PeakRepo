@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="title">学生成绩管理系统</string>
+    <string name="app_name">学生成绩管理系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_about">关于本程序</string>
+    <string name="title_activity_sqlite_demo">SQliteDemo</string>
+    <string name="str_id">学号：</string>
+    <string name="query_edit_hint">请输入学生学号</string>
+    <string name="str_query_button">查询</string>
+    <string name="query_str">查询</string>
+    <string name="insert_str">添加</string>
+    <string name="update_str">修改</string>
+    <string name="delete_str">删除</string>
+    <string name="text1">ID</string>
+    <string name="text2">姓名</string>
+    <string name="text3">学号</string>
+    <string name="text4">成绩</string>
+    <string name="insert_text1">姓名:</string>
+    <string name="insert_text2">学号:</string>
+    <string name="insert_text3">成绩:</string>
+    <string name="insert_editName_hint">请输入学生姓名</string>
+    <string name="insert_editNumber_hint">请输入学生学号</string>
+    <string name="insert_editScore_hint">请输入学生成绩</string>
+    <string name="noinfo">没有该学生的信息</string>
+    <string name="haveNumber">已经存在该学号,请重新输入！</string>
+    <string name="dialog_title">温馨提示</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="app_exit">你确定退出吗？</string>
+    <string name="dialog_msg">关于本程序:\n\n作者：顾修忠\n\nQQ:893115871\n
+        Email:gfj19900401@163.com\nbolg:http://blog.csdn.net/ta893115871\n
+        如有问题请联系\nO(∩_∩)O谢谢</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/id_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@drawable/red"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="60sp"
+        android:layout_toRightOf="@+id/id_id"
+        android:textColor="@drawable/green"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/number_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="180sp"
+        android:textColor="@drawable/magenta"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/score_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@drawable/yellow"
+        android:layout_marginRight="20sp"
+        android:textSize="17sp" />
+
+</RelativeLayout>

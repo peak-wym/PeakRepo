@@ -1,0 +1,244 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 查询的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/queryLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/query_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25sp"
+            android:text="@string/str_id"
+            android:textColor="@drawable/red"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/query_edit_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/query_id"
+            android:layout_toRightOf="@+id/query_id"
+            android:hint="@string/query_edit_hint"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@drawable/blue" />
+
+        <Button
+            android:id="@+id/query_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/query_edit_id"
+            android:layout_marginTop="30sp"
+            android:enabled="false"
+            android:text="@string/str_query_button" />
+
+        <RelativeLayout
+            android:id="@+id/layoutColumn_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_button_id" >
+
+            <TextView
+                android:id="@+id/textView1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/text1"
+                android:textColor="@drawable/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80sp"
+                android:layout_toRightOf="@+id/textView1_id"
+                android:text="@string/text2"
+                android:textColor="@drawable/green"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180sp"
+                android:text="@string/text3"
+                android:textColor="@drawable/magenta"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:text="@string/text4"
+                android:textColor="@drawable/blue"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/query_list_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutColumn_id"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/line" >
+        </ListView>
+    </RelativeLayout>
+
+    <!-- 以下是 添加，修改，删除的共同布局 -->
+
+    <RelativeLayout
+        android:id="@+id/insertLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back" >
+
+        <TextView
+            android:id="@+id/insert_textView1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25sp"
+            android:text="@string/insert_text1"
+            android:textColor="@drawable/red"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/insert_editName_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/insert_textView1_id"
+            android:layout_toRightOf="@+id/insert_textView1_id"
+            android:hint="@string/insert_editName_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:singleLine="true"
+             android:layout_marginTop="22sp"
+            android:textColor="@drawable/darkgray"
+            android:textColorHint="@drawable/yellow" />
+
+        <TextView
+            android:id="@+id/insert_textView2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/insert_editName_id"
+            android:text="@string/insert_text2"
+            android:textColor="@drawable/red"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/insert_editNumber_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/insert_textView2_id"
+            android:layout_below="@+id/insert_editName_id"
+            android:layout_toRightOf="@+id/insert_textView2_id"
+            android:hint="@string/insert_editNumber_hint"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@drawable/darkgray"
+            android:textColorHint="@drawable/yellow" />
+
+        <TextView
+            android:id="@+id/insert_textView3_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/insert_editNumber_id"
+            android:text="@string/insert_text3"
+            android:textColor="@drawable/red"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/insert_editScore_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/insert_textView3_id"
+            android:layout_below="@+id/insert_editNumber_id"
+            android:layout_toRightOf="@+id/insert_textView3_id"
+            android:hint="@string/insert_editScore_hint"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@drawable/darkgray"
+            android:textColorHint="@drawable/yellow" />
+
+        <Button
+            android:id="@+id/insert_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/insert_editScore_id"
+            android:text="@string/insert_str" />
+
+        <RelativeLayout
+            android:id="@+id/insert_layoutColumn_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert_button_id" >
+
+            <TextView
+                android:id="@+id/insert_textView01_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/text1"
+                android:textColor="@drawable/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/insert_textView02_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:layout_toRightOf="@+id/insert_textView01_id"
+                android:text="@string/text2"
+                android:textColor="@drawable/green"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/insert_textView03_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180sp"
+                android:text="@string/text3"
+                android:textColor="@drawable/magenta"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/insert_textView04_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:text="@string/text4"
+                android:textColor="@drawable/blue"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/insert_list_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert_layoutColumn_id"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/line" >
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>
